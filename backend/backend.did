@@ -1,0 +1,19 @@
+type Result = 
+ variant {
+   err: text;
+   ok;
+ };
+type Note = 
+ record {
+   content: text;
+   date: int;
+   id: text;
+   isCompleted: bool;
+ };
+service : {
+  addNote: (int, text) -> (text);
+  getDateTime: (text) -> (text);
+  getNotes: () -> (vec Note) query;
+  getWeatherForecast: (text) -> (text);
+  updateNoteStatus: (text, bool) -> (Result);
+}

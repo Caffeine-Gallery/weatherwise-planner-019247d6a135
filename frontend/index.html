@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Daily Planner</h1>
+        <div id="location-input">
+            <input type="text" id="location" placeholder="Enter location">
+            <button id="get-info">Get Info</button>
+        </div>
+        <div id="current-info"></div>
+        <div id="calendar"></div>
+        <div id="notes">
+            <h2>Notes</h2>
+            <div id="notes-list"></div>
+            <div id="add-note">
+                <input type="date" id="note-date">
+                <input type="text" id="note-content" placeholder="Enter note">
+                <button id="add-note-btn">Add Note</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
